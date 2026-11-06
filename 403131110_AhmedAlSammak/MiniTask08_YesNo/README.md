@@ -14,6 +14,9 @@ Train and compare different classifiers on the **YesNo** dataset from `torchaudi
    - Frames above a threshold are speech; close segments are merged and very short ones removed.
    - Since every file has exactly 8 words, several thresholds are tried until 8 segments are found.
    - Result: **59 of 60** files were split correctly (file 21 was skipped) → **472 words**.
+   ![Waveform](Figure_1.png)
+   ![Segmentation](Figure_2.png)
+   ![Segmentation of file 42](Figure_3.png)
 2. **Feature extraction**
    - 13 MFCCs per frame, then the **mean and standard deviation** over time → 26 features per word.
 3. **Train/test split**
